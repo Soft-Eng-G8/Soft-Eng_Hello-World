@@ -3,7 +3,7 @@ mkdir dist
 mkdir docs
 
 :: Compile Java files
-javac -d bin -sourcepath src src/com/softengdev/HelloWorld/*.java
+javac -d bin -sourcepath src src/com/softengdev/*.java
 
 :: Create final JAR file 
 jar cfm dist/HelloWorld.jar manifest.txt -C bin .
