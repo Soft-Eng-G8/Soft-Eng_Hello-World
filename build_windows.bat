@@ -9,4 +9,4 @@ javac -d bin -sourcepath src src/com/softengdev/*.java
 jar cfm dist/HelloWorld.jar manifest.txt -C bin .
 
 :: Build documentation
-javadoc -d docs src/com/softengdev/HelloWorld/*.java
+javadoc -d docs src/com/softengdev/*.java
