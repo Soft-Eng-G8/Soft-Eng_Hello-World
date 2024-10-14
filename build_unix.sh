@@ -5,7 +5,7 @@
 mkdir -p dist
 
 # Compile the Java source files
-javac -d bin -sourcepath src src/com/softengdev/HelloWorld/*.java
+javac -d bin -sourcepath src src/com/softengdev/*.java
 
 # Create the JAR file with the specified manifest
 jar cfm dist/HelloWorld.jar manifest.txt -C bin .

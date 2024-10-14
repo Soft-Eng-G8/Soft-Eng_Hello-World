@@ -1,3 +1,3 @@
 Comment: This file is used for configurating compilation. Do not mess with.
 
-Main-Class: com.softengdev.HelloWorld.Main
+Main-Class: com.softengdev.HelloWorld
