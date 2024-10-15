@@ -6,12 +6,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class PersistantData {
+public class PersistentData {
   // Initializes reader/writer
   private static final String FILE_LOCATION = "resources/persistent_data.txt";
   private File file;
   // private BufferedWriter writer;
-  public PersistantData() {
+  public PersistentData() {
     initialize_data();
   }
 
