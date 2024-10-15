@@ -20,7 +20,7 @@ public class PersistentData {
     try {
       file = new File(FILE_LOCATION);
     } catch (NullPointerException e) {
-      // TODO: handle exception
+      System.out.println("Code should't get here, but for some reason did, as the file must exist with build version.");
     }
     // try {
     //   reader = new BufferedReader(new FileReader(FILE_LOCATION));
@@ -41,6 +41,8 @@ public class PersistentData {
       }
       reader.close();
     } catch (FileNotFoundException e) {
+      System.out.println("Code should't get here, but for some reason did, as the file must exist with build version.");
+
     }
     return line;
   }
@@ -57,6 +59,7 @@ public class PersistentData {
       writer.write(value);
       writer.close();
     } catch (IOException e) {
+      System.out.println("Code should't get here, but for some reason did, as the file must exist with build version.");
     }
   }
   public void save_value_int(int value) {
