@@ -2,7 +2,7 @@ package com.softengdev;
 
 
 public class MessagePrinter {
-    public MessagePrinter(String msg, int run) {
+    public MessagePrinter() {
 
     }
     public void printMessage(String message) {

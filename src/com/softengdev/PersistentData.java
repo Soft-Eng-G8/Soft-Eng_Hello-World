@@ -37,7 +37,6 @@ public class PersistentData {
       Scanner reader = new Scanner(file);
       while(reader.hasNextLine()) {
         line = reader.nextLine();
-        System.out.println("AA " + line);
       }
       reader.close();
     } catch (FileNotFoundException e) {
