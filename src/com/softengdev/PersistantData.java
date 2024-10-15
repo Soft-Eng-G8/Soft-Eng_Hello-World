@@ -31,17 +31,7 @@ public class PersistantData {
   }
 
   // Returns currently stored value, string
-  public String load_value() {
-    // try {
-    //   String line;
-    //   while((line = reader.readLine()) != null) 
-    //     System.out.println("AA " + line);
-    //   reader.mark(3);
-    //   reader.reset();
-    //   return line;
-    // } catch (IOException e) {
-    // }
-    // return "0";
+  public String load_value_string() {
     String line = "0";
     try {
       Scanner reader = new Scanner(file);
@@ -55,13 +45,22 @@ public class PersistantData {
     return line;
   }
 
+  public int load_value_int() {
+    String val = load_value_string();
+    return Integer.parseInt(val);
+  }
+
   // Saves given value, string
-  public void save_value(String value) {
+  public void save_value_string(String value) {
     try {
       FileWriter writer = new FileWriter(FILE_LOCATION);
       writer.write(value);
       writer.close();
     } catch (IOException e) {
     }
+  }
+  public void save_value_int(int value) {
+    String val = String.valueOf(value);
+    save_value_string(val);
   }
 }
