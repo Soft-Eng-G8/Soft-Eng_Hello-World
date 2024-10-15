@@ -17,6 +17,9 @@ public class PersistentData {
   private static final String FILE_LOCATION = "resources/persistent_data.txt";
   private File file;
   // private BufferedWriter writer;
+  /**
+     * Constructs a new {@code PersistentData} instance and initializes the file resource.
+     */
   public PersistentData() {
     initialize_data();
   }

@@ -5,6 +5,9 @@ package com.softengdev;
  * to the console. It contains a method to print a string message.
  */
 public class MessagePrinter {
+    /**
+     * Constructs a new {@code MessagePrinter} instance.
+     */
     public MessagePrinter() {
 
     }
